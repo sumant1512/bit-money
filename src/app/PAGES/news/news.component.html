@@ -13,7 +13,7 @@
             <!-- This is loop for news list -->
             <div *ngFor="let group of newsList; let i = index" [ngClass]="i===0 ? 'active':''" class="carousel-item">
                 <div class="p-5 row">
-                    <div *ngFor="let news of group.group; let j = index" class="mb-3 p-5 p-md-3 col-12 col-md-4">
+                    <div *ngFor="let news of group.group; let j = index" class="mb-3 px-3 py-3 py-md-5 px-md-5 p-md-3 col-12 col-md-4">
                         <div class="news-card news-card-top bg-dark-blue card w-100">
                             <img class="news-card-top card-img-top" [src]='news.image' alt="Card image cap">
                             <div class="card-body">
