@@ -1,0 +1,35 @@
+/* This is for login form head */
+
+.login-head {
+    padding-top: 3px;
+    border-radius: 15px;
+    border: 5px solid !important;
+}
+
+
+/* Login form head end */
+
+
+/* This is for font size of label */
+
+.fa-25 {
+    font-size: 25rem;
+    color: royalblue;
+}
+
+
+/* Font size label end */
+
+
+/* This is for login button */
+
+.bg-login-button {
+    background: linear-gradient(to right, #0d469f 0%, rgb(127, 130, 201) 100%);
+}
+
+.bg-login-button:hover {
+    background: linear-gradient(to right, rgb(127, 130, 201) 0%, #0d469f 100%);
+}
+
+
+/* Login button end */

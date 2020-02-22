@@ -1,0 +1,23 @@
+<!-- This is project template -->
+<div class="pb-5 bg-dark-blue">
+    <!-- This is for project head -->
+    <div class="row text-center m-auto text-md-center">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 p-5">
+            <h2 class="text-light">Advantage of the Project</h2>
+        </div>
+    </div>
+    <!-- Project head end -->
+
+    <!-- This is for project card -->
+    <div class="row px-0 px-md-5 mr-5 ml-5">
+        <div *ngFor="let project of projectList" class="d-grid px-4 pb-3 mt-3 mb-3 col-12 col-xs-12 com-sm-12 col-md-6 col-lg-4">
+            <div class="card card-radius box-shadow bg-light-blue text-light text-center text-center">
+                <div class="card-body">
+                    <div><img class="my-4" src="{{project.logo}}" alt="{{project.alt}}"></div>
+                    <h4><b>{{project.technology}}</b></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project card end -->
+</div>

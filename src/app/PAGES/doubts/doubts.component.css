@@ -1,0 +1,66 @@
+/* This is top design */
+
+.top-design {
+    height: 20px !important;
+    width: 70%;
+    background: linear-gradient( to right, rgba(57, 100, 208, 1) 0%, rgba(45, 193, 201, 1) 100%);
+}
+
+
+/* Top design end */
+
+
+/* This is for address box */
+
+.address-box {
+    color: #7aa9f3;
+}
+
+
+/* Address box end */
+
+
+/* This is for animation */
+
+.address-animation {
+    transition: transform 0.5s;
+}
+
+.address-animation:hover {
+    transform: translate(0px, -8px);
+}
+
+
+/* Animation end */
+
+
+/* This is for card head */
+
+.card-head {
+    border: none;
+}
+
+
+/* card head end */
+
+
+/* This is for question  */
+
+button:hover {
+    text-decoration: none;
+}
+
+
+/* Question end */
+
+
+/* This is for button select */
+
+button:focus {
+    text-decoration: none;
+    color: white !important;
+    background: linear-gradient( to right, rgba(57, 100, 208, 1) 0%, rgba(45, 193, 201, 1) 100%);
+}
+
+
+/* Button select end */

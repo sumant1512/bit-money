@@ -1,0 +1,10 @@
+/* Timer border */
+
+.duration-border {
+    border: 4px solid;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+
+/* Timer border end */

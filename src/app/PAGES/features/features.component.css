@@ -1,0 +1,52 @@
+/* For read mode button */
+
+.read-more-button {
+    width: 35%;
+}
+
+
+/* Read more butto end */
+
+
+/* For vertical line */
+
+.vertical-line-right {
+    border-right: 2px solid white;
+}
+
+.vertical-line-left {
+    border-left: 2px solid white;
+}
+
+
+/* Vertical line end */
+
+
+/* This is for I-pad view */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .read-more-button {
+        width: 50%;
+    }
+}
+
+
+/* I-pad view end */
+
+
+/* This is for Mobile view end */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .read-more-button {
+        width: 50%;
+    }
+    .vertical-line-right {
+        border-right: none;
+    }
+    .vertical-line-left {
+        border-left: none;
+    }
+}
+
+
+/* Mobile view end */

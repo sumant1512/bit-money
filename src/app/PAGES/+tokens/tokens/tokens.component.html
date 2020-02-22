@@ -1,0 +1,87 @@
+<!-- This is token template -->
+<div class="bg-light-blue text-center text-light">
+    <div class="row text-center m-auto">
+        <div class="col-md-1 col-lg-2">
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8 p-5 p-md-0">
+            <!-- This is for token head -->
+            <h1 class="my-3 py-5">Rounds of Sale of Tokens</h1>
+            <!-- Token head end -->
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-12 col-lg-10">
+                    <!-- This is for token top design for mobile view  -->
+                    <div class="d-none d-md-flex row">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-6"><strong class="target-box-head py-2 px-3">PRE-SALE</strong></div>
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-6"><strong class="target-box-head py-2 px-4">ICO</strong></div>
+                    </div>
+                    <!-- Token top design for mobile view -->
+
+                    <!-- This is for token card -->
+                    <div class="row">
+                        <div class="d-grid mb-5 col-12 col-xs-12 col-sm-12 col-md-6">
+                            <strong class="w-50 m-auto d-xs-flex d-md-none target-box-head py-2 px-3">PRE-SALE</strong>
+                            <div class="target-box-border bg-dark-blue br-25 py-5 ">
+                                <div class="target-content m-auto">
+                                    <h5><strong>Target - to Raise USD 500,000</strong></h5>
+                                    <button class="button button-transparent w-75 w-lg-75 color-block mb-4 mt-4 mx-auto z-depth-1 font-weight-bold text-light" type="submit">
+            Price 1 BIT - $0.25
+          </button>
+                                    <div class="special-bonus m-auto p-auto">
+                                        <div class="mx-1 my-3 p-2">
+                                            <h1 class="m-0"><strong>20%</strong></h1>
+                                            <h6><strong>Special Bonus</strong></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid mb-5 col-12 col-xs-12 col-sm-12 col-md-6">
+                            <strong class="w-50 m-auto d-xs-flex d-md-none target-box-head py-2 px-4">ICO</strong>
+                            <div class="target-box-border bg-dark-blue br-25 py-5 ">
+                                <div class="target-content m-auto">
+                                    <h5><strong>Target - to Raise USD 500,000</strong></h5>
+                                    <button class="button bg-common-button blue-gradient w-75 w-lg-75 color-block mb-4 mt-4 mx-auto z-depth-1 font-weight-bold text-light" type="submit">
+            Price 1 BIT - $1.00
+          </button>
+                                    <h5 class="mb-3"><b> Bonus for ICO </b></h5>
+                                    <div class="text-fade-blue text-left row px-5 px-md-0 px-lg-5">
+                                        <div class="col-lg-1"></div>
+                                        <div class="p-0 pl-4 pl-lg-0 col-6 col-md-6 col-lg-5"><b>Time</b></div>
+                                        <div class="p-0 col-6 text-center col-md-6 col-lg-5"><b>Bonus</b></div>
+                                        <div class="col-lg-1"></div>
+                                    </div>
+                                    <div *ngFor="let bonus of bonusList" class="text-fade-blue text-left row px-5 px-md-0 px-lg-5">
+                                        <div class="col-lg-1"></div>
+                                        <div class="p-0 pl-4 pl-lg-0 col-6 col-md-6 col-lg-5">{{bonus.time}}</div>
+                                        <div class="p-0 col-6 text-center col-md-6 col-lg-5">{{bonus.bonus}}%</div>
+                                        <div class="col-lg-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Token card end -->
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <!-- This is for bottom paragraph -->
+            <div>
+                <h5 class="text-light-blue">The sale of tokens It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.There are many variations of passages of Lorem Ipsum available. There are many variations of
+                    passages.
+                </h5>
+            </div>
+            <!-- Botton paragragh end -->
+        </div>
+        <div class="col-md-1 col-lg-2">
+        </div>
+    </div>
+</div>
+
+<!-- This is team template -->
+<app-team></app-team>
+<!-- Team template end -->
+
+<!-- This is advisor template -->
+<app-advisors></app-advisors>
+<!-- Advison template end -->

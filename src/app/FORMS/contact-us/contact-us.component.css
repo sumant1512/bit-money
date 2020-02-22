@@ -1,0 +1,57 @@
+/* This is for input placeholeder */
+
+::placeholder {
+    color: #7aa9f3;
+}
+
+
+/* Place holder end */
+
+
+/* This is for Address details card top */
+
+.top-design {
+    height: 20px !important;
+    width: 70%;
+    background: linear-gradient( to right, rgba(57, 100, 208, 1) 0%, rgba(45, 193, 201, 1) 100%);
+}
+
+
+/* Address details end */
+
+
+/* Address box color */
+
+.address-box {
+    color: #7aa9f3;
+}
+
+
+/* box colo end */
+
+
+/* This is for contact icons */
+
+.contact-icons {
+    border: 2px solid white;
+    height: 60px;
+    width: 60px;
+    padding: 12px;
+}
+
+
+/* Contact icons end */
+
+
+/* This is for address animation */
+
+.address-animation {
+    transition: transform 0.5s;
+}
+
+.address-animation:hover {
+    transform: translate(0px, -8px);
+}
+
+
+/* Address animation end */

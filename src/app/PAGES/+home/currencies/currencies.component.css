@@ -1,0 +1,14 @@
+/* This is for card animation */
+
+.card-radius {
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    background: linear-gradient( to right, rgba(57, 100, 208, 1) 0%, rgba(45, 193, 201, 1) 100%);
+    transform: translate(0px, -8px);
+}
+
+
+/* Card animation end */

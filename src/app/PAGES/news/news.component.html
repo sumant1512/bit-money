@@ -1,0 +1,62 @@
+<!-- This is for news template -->
+<div class="bg-light-blue">
+    <!-- news template head -->
+    <div class="row m-auto text-light py-5 justify-content-center">
+        <h1>Latest News</h1>
+    </div>
+    <!-- News template end -->
+
+    <!-- This is for news carousel  -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- This is loop for news list -->
+            <div *ngFor="let group of newsList; let i = index" [ngClass]="i===0 ? 'active':''" class="carousel-item">
+                <div class="p-5 row">
+                    <div *ngFor="let news of group.group; let j = index" class="mb-3 p-5 p-md-3 col-12 col-md-4">
+                        <div class="news-card news-card-top bg-dark-blue card w-100">
+                            <img class="news-card-top card-img-top" [src]='news.image' alt="Card image cap">
+                            <div class="card-body">
+                                <div class="py-3 text-light">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span class="f-14 ml-2">{{news.date}}</span>
+                                </div>
+                                <div class="text-fade-blue">
+                                    <a href="">
+                                        <b>
+                                            {{news.head}}
+                                        </b>
+                                    </a>
+                                </div>
+                                <p class="py-3 text-light card-text">{{news.body}}</p>
+                                <a class="pb-3" href="#"><b>Read mode ></b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- News list loop end -->
+
+        </div>
+
+        <!-- This is for previous button -->
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <div class="next-previous br-50">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </div>
+        </a>
+        <!-- Previous button end -->
+
+        <!-- This is for next button -->
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <div class="next-previous br-50">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </div>
+        </a>
+        <!-- Next button end -->
+
+    </div>
+    <!-- News carousel end -->
+</div>

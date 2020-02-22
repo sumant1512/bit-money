@@ -1,0 +1,78 @@
+/* This is for scroll down css  */
+
+.scroll-down {
+    border: 3px solid;
+    border-radius: 50%;
+    max-width: 78px;
+}
+
+
+/* Scroll down css */
+
+
+/* This is for right border */
+
+.box-border-right {
+    border-right: 2px solid;
+}
+
+
+/* Right border end */
+
+
+/* This is for left border */
+
+.box-border-left {
+    border-left: 2px solid;
+}
+
+
+/* Left border end */
+
+
+/* This is for top border */
+
+.box-border-top {
+    border-top: 2px solid;
+}
+
+
+/* Top border end */
+
+
+/* This is for bottom border */
+
+.box-border-bottom {
+    border-bottom: 2px solid;
+}
+
+
+/* Botton border end */
+
+
+/* This is for icon animantion */
+
+.bounce-in-down {
+    animation-duration: 2.7s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    0% {
+        transform: translateY(120px);
+    }
+    40% {
+        transform: translateY(110px);
+    }
+}
+
+
+/* Icon animation end */
