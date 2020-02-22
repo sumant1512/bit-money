@@ -1,0 +1,23 @@
+/* This is for head design */
+
+.top-design {
+    height: 20px !important;
+    width: 70%;
+    background: linear-gradient( to right, rgba(57, 100, 208, 1) 0%, rgba(45, 193, 201, 1) 100%);
+}
+
+
+/* head desing end */
+
+
+/* This is for social meadia icons */
+
+.social-media-icons {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+
+/* Social media icons end */

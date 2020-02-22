@@ -1,0 +1,25 @@
+<!-- This is currency template -->
+<div class="bg-dark-blue mt-5">
+    <div class="row mr-5 ml-5">
+        <!-- This is loop for currencies -->
+        <div *ngFor="let currency of currencyList" class="d-grid mt-3 mb-3 col-12 col-xs-12 col-sm-12 col-md-4 col-lg-2">
+            <div class="d-grid pt-3 bg-fade-blue br-80">
+                <div class="card card-radius bg-light-blue text-light text-center">
+                    <div class="card-body">
+                        <div class="row">
+                            <h6>
+                                <img class="img-fluid" [src]="currency.logo">
+                                <b class="pl-3">{{currency.currencyName}}</b>
+                            </h6>
+                        </div>
+                        <div class="row px-3">
+                            <button class="button bg-common-button blue-gradient w-100 color-block mb-3 mx-auto font-weight-bold text-light " type="submit ">
+                                {{currency.value}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+/* /This is for news card design */
+
+.news-card-top {
+    border-radius: 17px;
+}
+
+
+/* News card design end */
+
+
+/* This is for for news card animation */
+
+.news-card {
+    transition: transform .2s;
+}
+
+.news-card:hover {
+    box-shadow: 0px 10px 50px -5px #000;
+    transform: scale(1.1);
+}
+
+
+/* News card animabtion end */
+
+
+/* This is for next and previous icon */
+
+.next-previous {
+    height: 60px;
+    width: 60px;
+    border: 2px solid white;
+    padding: 18px;
+    background-color: #170675;
+}
+
+
+/* Next-Previons end */

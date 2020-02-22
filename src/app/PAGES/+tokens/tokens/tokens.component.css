@@ -1,0 +1,55 @@
+/* This is for box border to make distace between border */
+
+.target-box-border {
+    border-left: 12px solid #0d469f;
+    border-right: 12px solid #0d469f;
+}
+
+
+/* Box border end */
+
+
+/* This is target content */
+
+.target-content {
+    max-width: 352px;
+}
+
+
+/* Target content end */
+
+
+/* This is to make button transparent */
+
+.button-transparent {
+    background-color: transparent;
+    border: 3px solid #2c9cea;
+}
+
+
+/* Button transparent end */
+
+
+/* This is for bonus  */
+
+.special-bonus {
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    border: 2px solid #2c9cea;
+}
+
+
+/* Bonus end */
+
+
+/* Target box top */
+
+.target-box-head {
+    background: linear-gradient(to right, rgba(57, 100, 208, 1) 0%, rgba(45, 193, 201, 1) 100%);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+
+/* Box top end */

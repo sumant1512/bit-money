@@ -1,0 +1,88 @@
+/* This is for social media icons */
+
+.social-media-icons {
+    border: 3px solid;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+
+/* social media icons end */
+
+
+/* This is for bounce down of image and icons */
+
+.bounce-in-down {
+    animation-duration: 2.7s;
+    animation-iteration-count: 1;
+    animation-name: bounce;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    0% {
+        transform: translateY(-600px);
+    }
+    40% {
+        transform: translateY(-50px);
+    }
+}
+
+
+/* bounce down of image and icons end */
+
+
+/* This is for left to right animation of home heading */
+
+.left-to-right {
+    animation-duration: 1.8s;
+    animation-iteration-count: 1;
+    animation-name: wobble;
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(2%);
+    }
+    45% {
+        transform: translateX(-5%);
+    }
+}
+
+
+/* left to right animation of home heading */
+
+
+/* This is for I-pad view  */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .home-image {
+        max-width: 100%;
+    }
+}
+
+
+/* I-pad view end */
+
+
+/* This is for mobile view */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .home-image {
+        max-width: 100%;
+    }
+}
+
+
+/* Mobile view end */
