@@ -1,3 +1,15 @@
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
 .f-14 {
     font-size: 14px;
 }
@@ -149,6 +161,6 @@ a:hover {
         background-color: #0d469f;
     }
     .btn {
-        width: 50% !important;
+        width: 75% !important;
     }
 }
