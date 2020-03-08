@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-currencies",
+  host: { class: "w-100" },
   templateUrl: "./currencies.component.html",
   styleUrls: ["./currencies.component.css"]
 })
