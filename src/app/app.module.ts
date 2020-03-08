@@ -11,7 +11,6 @@ import { FeaturesComponent } from "./PAGES/features/features.component";
 import { ProjectComponent } from "./PAGES/project/project.component";
 import { StepsComponent } from "./PAGES/steps/steps.component";
 import { LoginComponent } from "./FORMS/login/login.component";
-import { ParticlesModule } from "angular-particle";
 import { HomeComponent } from "./PAGES/+home/home/home.component";
 import { CurrenciesComponent } from "./PAGES/+home/currencies/currencies.component";
 import { TokensComponent } from "./PAGES/+tokens/tokens/tokens.component";
@@ -52,7 +51,6 @@ import { FooterComponent } from "./SHARED/footer/footer.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ParticlesModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule
