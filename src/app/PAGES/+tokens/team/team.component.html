@@ -1,40 +1,51 @@
 <!-- This is team template -->
 <div class="bg-light-blue text-light pb-5">
+  <!-- This is for heading -->
+  <div class="row m-auto py-5 justify-content-center">
+    <h1>Core</h1>
+  </div>
+  <!-- Heading end -->
 
-    <!-- This is for heading -->
-    <div class="row m-auto py-5 justify-content-center">
-        <h1>Core</h1>
-    </div>
-    <!-- Heading end -->
+  <!-- This is loop for team list -->
+  <div class="row m-auto px-0 px-md-5">
+    <div
+      *ngFor="let team of teamList; let i = index"
+      [ngClass]="i % 2 ? 'pl-md-0' : 'pr-md-0'"
+      class="text-center text-lg-right my-3 col-12 col-md-6"
+    >
+      <div class="m-auto br-tl-10 br-tr-10 top-design"></div>
+      <div class="br-25 mx-0 mx-md-4 p-5 bg-dark-blue">
+        <div class="row">
+          <!-- Team member image -->
+          <div class="col-12 col-lg-5">
+            <img class="text-center" [src]="team.image" />
+          </div>
 
-    <!-- This is loop for team list -->
-    <div class="row m-auto px-0 px-md-5">
-        <div *ngFor="let team of teamList; let i = index" [ngClass]="i%2 ? 'pl-md-0':'pr-md-0'" class="text-center text-lg-right my-3 col-12 col-md-6">
-            <div class="m-auto br-tl-10 br-tr-10 top-design"></div>
-            <div class="br-25 mx-0 mx-md-4 p-5 bg-dark-blue">
-                <div class="row">
-
-                    <!-- Team member image -->
-                    <div class="col-12 col-lg-5">
-                        <img class="text-center" [src]='team.image'>
-                    </div>
-
-                    <!-- Team member details -->
-                    <div class="col-12 col-lg-7">
-                        <h2 class="mb-0 mt-3 mt-lg-0">{{team.name}}</h2>
-                        <p class="text-fade-blue">({{team.designation}})</p>
-                        <div>
-                            <i class="bg-common-button br-50 text-light text-fade-blue social-media-icons mr-2 fa fa-2x fa-facebook" aria-hidden="true"></i>
-                            <i class="bg-common-button br-50 text-light text-fade-blue social-media-icons mr-2 fa fa-2x fa-twitter" aria-hidden="true"></i>
-                            <i class="bg-common-button br-50 text-light text-fade-blue social-media-icons mr-2 fa fa-2x fa-linkedin" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-lg-left mt-3">
-                    <p class="text-fade-blue">{{team.bio}}</p>
-                </div>
+          <!-- Team member details -->
+          <div class="col-12 col-lg-7">
+            <h2 class="mb-0 mt-3 mt-lg-0">{{ team.name }}</h2>
+            <p class="text-fade-blue">({{ team.designation }})</p>
+            <div>
+              <i
+                class="bg-common-button br-50 text-light text-fade-blue social-media-icons me-2 fa fa-2x fa-facebook"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="bg-common-button br-50 text-light text-fade-blue social-media-icons me-2 fa fa-2x fa-twitter"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="bg-common-button br-50 text-light text-fade-blue social-media-icons me-2 fa fa-2x fa-linkedin"
+                aria-hidden="true"
+              ></i>
             </div>
+          </div>
         </div>
+        <div class="row text-lg-left mt-3">
+          <p class="text-fade-blue">{{ team.bio }}</p>
+        </div>
+      </div>
     </div>
-    <!-- Team list loop end -->
+  </div>
+  <!-- Team list loop end -->
 </div>

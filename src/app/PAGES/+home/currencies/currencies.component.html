@@ -1,6 +1,6 @@
 <!-- This is currency template -->
 <div class="container-fluid bg-dark-blue mt-0 mt-md-5">
-  <div class="row mr-5 ml-5">
+  <div class="row me-5 ms-5">
     <!-- This is loop for currencies -->
     <div
       *ngFor="let currency of currencyList"
@@ -11,7 +11,7 @@
           <div class="card-body">
             <div class="row">
               <h6>
-                <img class="img-fluid" [src]="currency.logo" />
+                <img class="img-fluid me-2" [src]="currency.logo" />
                 <b class="pl-3">{{ currency.currencyName }}</b>
               </h6>
             </div>
