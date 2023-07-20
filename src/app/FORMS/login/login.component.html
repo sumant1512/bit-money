@@ -1,50 +1,77 @@
 <!-- This is Login component -->
-<div class="bg-dark-blue">
-    <!-- This is login heading -->
-    <div class="row m-auto text-light pt-5 justify-content-center">
-        <h1>Admin</h1>
-    </div>
-    <!-- Login heading end -->
+<div class="container-fluid bg-dark-blue">
+  <!-- This is login heading -->
+  <div class="row m-auto text-light pt-5 justify-content-center">
+    <h1>Admin</h1>
+  </div>
+  <!-- Login heading end -->
 
-    <div class="row text-center m-auto">
-        <div class="col-md-1 col-lg-1"></div>
+  <div class="row text-center m-auto">
+    <div class="col-md-1 col-lg-1"></div>
 
-        <!-- This is for login form -->
-        <div class="col-12 col-xs-12 col-sm-12 col-md-5 col-lg-5 p-3 p-md-5">
-            <div class="bg-fade-blue login-head border border-light text-light">
-                <div>
-                    <h1 class="text-light mt-3 mb-3"><b>LOGIN</b></h1>
-                </div>
-                <div class="px-3 pb-2 text-left">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email Address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="mt-2 text-right">
-                            <button [routerLink]="['/login']" class="button bg-login-button blue-gradient color-block mb-3 mx-auto z-depth-1 font-weight-bold text-light " type="submit ">Login</button>
-                        </div>
-                        <div class="text-center">
-                            <p>Don't have an account?</p>
-                            <p><b><a  class="text-dark" [routerLink]="['/index']">Register Here</a></b></p>
-                        </div>
-                    </form>
-                </div>
+    <!-- This is for login form -->
+    <div class="col-12 col-xs-12 col-sm-12 col-md-5 col-lg-5 p-3 p-md-5">
+      <div class="bg-fade-blue login-head border border-light text-light">
+        <div>
+          <h1 class="text-light mt-3 mb-3"><b>LOGIN</b></h1>
+        </div>
+        <div class="px-3 pb-2 text-left">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
             </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+            <div class="mt-2 text-right">
+              <button
+                [routerLink]="['/login']"
+                class="button bg-login-button blue-gradient color-block mb-3 mx-auto z-depth-1 font-weight-bold text-light"
+                type="submit "
+              >
+                Login
+              </button>
+            </div>
+            <div class="text-center">
+              <p>Don't have an account?</p>
+              <p>
+                <b
+                  ><a class="text-dark" [routerLink]="['/index']"
+                    >Register Here</a
+                  ></b
+                >
+              </p>
+            </div>
+          </form>
         </div>
-        <!-- Login form end -->
-
-        <!-- This is for changing lock and unlock -->
-        <div class="m-auto col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 p-5">
-            <div *ngIf="lock; else unLock"> <i class="fa-25 fa fa-unlock-alt" aria-hidden="true"></i></div>
-            <ng-template #unLock><i class="fa-25 fa fa-lock" aria-hidden="true"></i></ng-template>
-        </div>
-        <!-- Chandging lock and unlock end -->
-
-        <div class="col-md-1 col-lg-2"></div>
+      </div>
     </div>
+    <!-- Login form end -->
+
+    <!-- This is for changing lock and unlock -->
+    <div class="m-auto col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 p-5">
+      <div *ngIf="lock; else unLock">
+        <i class="fa-25 fa fa-unlock-alt" aria-hidden="true"></i>
+      </div>
+      <ng-template #unLock
+        ><i class="fa-25 fa fa-lock" aria-hidden="true"></i
+      ></ng-template>
+    </div>
+    <!-- Chandging lock and unlock end -->
+
+    <div class="col-md-1 col-lg-2"></div>
+  </div>
 </div>

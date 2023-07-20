@@ -1,16 +1,16 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-about",
-  templateUrl: "./about.component.html",
-  styleUrls: ["./about.component.css"]
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
-  countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
+  countDownDate = new Date('Jan 5, 2021 15:37:25').getTime();
+  days!: number;
+  hours!: number;
+  minutes!: number;
+  seconds!: number;
   constructor() {}
 
   ngOnInit() {

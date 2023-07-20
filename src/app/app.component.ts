@@ -1,61 +1,41 @@
-import { Component } from "@angular/core";
-import { ToggleStatusEmit } from "./TYPES/toggle-status-emit.type";
+import { Component, Inject } from '@angular/core';
+import { ToggleStatusEmit } from './TYPES/toggle-status-emit.type';
+import { DOCUMENT } from '@angular/common';
+import { ParticlesConfig } from './particler-config';
+
+declare let particlesJS: any;
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = "Bit-Money";
+  title = 'Bit-Money';
   status: boolean = false;
+
+  constructor(@Inject(DOCUMENT) private document: Document) {}
+
+  scrollToElement(elementId: string): void {
+    const element = this.document.getElementById(elementId);
+    if (element) {
+      const offset = 100;
+      const top = element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  }
 
   // This function is for toggel of header
   toggleforHeader(selectedPage: ToggleStatusEmit) {
     this.status = selectedPage.toggleStatus;
-    if (selectedPage.selectedPage) {
-      setTimeout(() => {
-        document
-          .getElementById(selectedPage.selectedPage)
-          .scrollIntoView({ behavior: "smooth", inline: "nearest" });
-      }, 1);
-    }
+    this.scrollToElement(selectedPage?.selectedPage || '');
   }
 
-  myStyle: object = {};
-  myParams: object = {};
-  width: number = 100;
-  height: number = 100;
-
   ngOnInit() {
-    // This is for animated animation
-  //   this.myStyle = {
-  //     position: "fixed",
-  //     width: "100%",
-  //     height: "100%",
-  //     "z-index": -1,
-  //     top: 0,
-  //     left: 0,
-  //     right: 0,
-  //     bottom: 0,
-  //     "background-color": "#0d469f"
-  //   };
+    this.invokeParticles();
+  }
 
-  //   this.myParams = {
-  //     particles: {
-  //       number: {
-  //         value: 200
-  //       },
-  //       color: {
-  //         value: "#101927"
-  //       },
-  //       shape: {
-  //         type: "circle"
-  //       },
-  //       move: {
-  //         speed: 10
-  //       }
-  //     }
-  //   };
+  invokeParticles(): void {
+    particlesJS('particles-js', ParticlesConfig, function () {});
   }
 }

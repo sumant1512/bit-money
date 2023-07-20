@@ -1,84 +1,96 @@
 <!-- This is for about template -->
 
-<div class="bg-dark-blue">
-    <div class="row text-center m-auto text-md-left">
+<div class="container-fluid bg-dark-blue">
+  <div class="row text-center text-md-left">
+    <!-- This is for about content -->
+    <div class="col-12 col-xs-12 col-sm-12 col-md-6 p-5">
+      <div>
+        <h1 class="text-light mt-3 mb-3">About the Project</h1>
+        <div class="text-fade-blue">
+          <p>
+            Bit Money is a lending and investment, multicurrency and
+            multifunctional online platform based on blockchain technology.
+            There investors and borrowers meet each other and have the
+            opportunity to lend money on mutually beneficial.
+          </p>
+          <p>
+            service that allows individuals to access loans from the comfort of
+            their home in fiat currencies or crypto-currencies.
+          </p>
+          <p>
+            Bit Money is a unique Bit Money is a multi-functional platform which
+            allows each participant to keep money in a multi-currency online
+            wallet, buy and sell currency on the exchange, invest money, get a
+            loan in a convenient currency.
+          </p>
+        </div>
+      </div>
 
-        <!-- This is for about content -->
-        <div class="col-12 col-xs-12 col-sm-12 col-md-6 p-5">
-            <div>
-                <h1 class="text-light mt-3 mb-3">About the Project</h1>
-                <div class="text-fade-blue">
-                    <p>
-                        Bit Money is a lending and investment, multicurrency and multifunctional online platform based on blockchain technology. There investors and borrowers meet each other and have the opportunity to lend money on mutually beneficial.
-                    </p>
-                    <p>
-                        service that allows individuals to access loans from the comfort of their home in fiat currencies or crypto-currencies.
-                    </p>
-                    <p>
-                        Bit Money is a unique Bit Money is a multi-functional platform which allows each participant to keep money in a multi-currency online wallet, buy and sell currency on the exchange, invest money, get a loan in a convenient currency.
-                    </p>
-                </div>
-            </div>
-
-            <!-- This is for button  -->
-            <div class="row text-center mt-5">
-                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                    <button class="btn button bg-common-button blue-gradient color-block mb-3 mx-auto z-depth-1 font-weight-bold text-light" type="submit">
+      <!-- This is for button  -->
+      <div class="row text-center mt-5">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <button
+            class="btn button bg-common-button blue-gradient color-block mb-3 mx-auto z-depth-1 font-weight-bold text-light"
+            type="submit"
+          >
             WHITEPAPER
           </button>
-                </div>
-                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                    <button class="btn button bg-common-button blue-gradient color-block mb-3 mx-auto z-depth-1 font-weight-bold text-light" type="submit">
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <button
+            class="btn button bg-common-button blue-gradient color-block mb-3 mx-auto z-depth-1 font-weight-bold text-light"
+            type="submit"
+          >
             BUY TOKEN NOW!
           </button>
-                </div>
-            </div>
-            <!-- Button end -->
-
         </div>
-        <!-- About content end -->
-
-        <!-- This is for timer -->
-        <div class="text-center m-auto col-12 col-xs-12 col-sm-12 col-md-6 p-3 p-lg-5">
-            <div class="row text-fade-blue">
-                <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3 pl-lg-0">
-                    <div class="duration-border">
-                        <h1 class="mt-5 mb-5">{{days}}</h1>
-                    </div>
-                    <div>
-                        <p class="h6 mt-2 font-weight-bold">Days</p>
-                    </div>
-                </div>
-                <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3 pl-lg-0">
-                    <div class="duration-border">
-                        <h1 class="mt-5 mb-5">{{hours}}</h1>
-                    </div>
-                    <div>
-                        <p class="h6 mt-2 font-weight-bold">Hours</p>
-                    </div>
-                </div>
-                <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3 pl-lg-0">
-                    <div class="duration-border">
-                        <h1 class="mt-5 mb-5">{{minutes}}</h1>
-                    </div>
-                    <div>
-                        <p class="h6 mt-2 font-weight-bold">Minutes</p>
-                    </div>
-                </div>
-                <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3 pl-lg-0">
-                    <div class="duration-border">
-                        <h1 class="mt-5 mb-5">{{seconds}}</h1>
-                    </div>
-                    <div>
-                        <p class="h6 mt-2 font-weight-bold">Seconds</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Timer end -->
-
+      </div>
+      <!-- Button end -->
     </div>
-    <!-- This is bottom svg template -->
-    <app-dark-bottom-svg></app-dark-bottom-svg>
-    <!-- Bottom svg template end -->
+    <!-- About content end -->
+
+    <!-- This is for timer -->
+    <div
+      class="text-center m-auto col-12 col-xs-12 col-sm-12 col-md-6 p-3 p-lg-5"
+    >
+      <div class="row text-fade-blue">
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3 pl-lg-0">
+          <div class="duration-border">
+            <h1 class="mt-5 mb-5">{{ days }}</h1>
+          </div>
+          <div>
+            <p class="h6 mt-2 font-weight-bold">Days</p>
+          </div>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3 pl-lg-0">
+          <div class="duration-border">
+            <h1 class="mt-5 mb-5">{{ hours }}</h1>
+          </div>
+          <div>
+            <p class="h6 mt-2 font-weight-bold">Hours</p>
+          </div>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3 pl-lg-0">
+          <div class="duration-border">
+            <h1 class="mt-5 mb-5">{{ minutes }}</h1>
+          </div>
+          <div>
+            <p class="h6 mt-2 font-weight-bold">Minutes</p>
+          </div>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-3 pl-lg-0">
+          <div class="duration-border">
+            <h1 class="mt-5 mb-5">{{ seconds }}</h1>
+          </div>
+          <div>
+            <p class="h6 mt-2 font-weight-bold">Seconds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Timer end -->
+  </div>
+  <!-- This is bottom svg template -->
+  <app-dark-bottom-svg></app-dark-bottom-svg>
+  <!-- Bottom svg template end -->
 </div>

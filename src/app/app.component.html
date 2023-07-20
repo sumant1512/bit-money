@@ -1,32 +1,17 @@
-<!-- This is for animated background -->
-<!-- <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles> -->
-<!-- Animated background end -->
-
-<!-- This is the main componend in which all the component are loading -->
-<div class="container-fluid">
-    <div class="row">
-        <!-- This is common header -->
-        <app-header (toggleStatus)="toggleforHeader($event)"></app-header>
-    </div>
-    <div class="row position-absolute w-100">
-        <div class="col-12 mx-0 px-0">
-            <div [ngClass]="status ? 'open overlay' : ''" class="">
-                <!-- These are all pages(components) -->
-                <app-home id="home"></app-home>
-                <app-about id="about"></app-about>
-                <app-features id="features"></app-features>
-                <app-project id="project"></app-project>
-                <app-steps id="steps"></app-steps>
-                <app-tokens id="tokens"></app-tokens>
-                <app-news id="news"></app-news>
-                <app-doubts></app-doubts>
-                <app-contact-us id="contact-us"></app-contact-us>
-                <app-press></app-press>
-                <app-subscribe></app-subscribe>
-                <app-login id="login"></app-login>
-                <!-- This is common footer -->
-                <app-footer></app-footer>
-            </div>
-        </div>
-    </div>
+<div class="app-container" [ngClass]="status ? 'open overlay' : ''">
+  <div id="particles-js"></div>
+  <app-header (toggleStatus)="toggleforHeader($event)"></app-header>
+  <app-home id="home"></app-home>
+  <app-about id="about"></app-about>
+  <app-features id="features"></app-features>
+  <app-project id="project"></app-project>
+  <app-steps id="steps"></app-steps>
+  <app-tokens id="tokens"></app-tokens>
+  <app-news id="news"></app-news>
+  <app-doubts></app-doubts>
+  <app-contact-us id="contact-us"></app-contact-us>
+  <app-press></app-press>
+  <app-subscribe></app-subscribe>
+  <app-login id="login"></app-login>
+  <app-footer></app-footer>
 </div>

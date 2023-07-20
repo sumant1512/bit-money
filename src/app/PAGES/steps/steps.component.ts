@@ -1,55 +1,66 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+
+export interface ISteps {
+  partA: IStepsPart;
+  partB: IStepsPart;
+}
+
+export interface IStepsPart {
+  stepHead: string;
+  stepBody: string;
+  icon: string;
+}
 
 @Component({
-  selector: "app-steps",
-  host: { class: "w-100" },
-  templateUrl: "./steps.component.html",
-  styleUrls: ["./steps.component.css"]
+  selector: 'app-steps',
+  host: { class: 'w-100' },
+  templateUrl: './steps.component.html',
+  styleUrls: ['./steps.component.css'],
 })
 export class StepsComponent {
   // This is steps list details
-  stepsDetails: object[] = [
+  stepsDetails: Array<ISteps> = [
     {
       partA: {
-        stepHead: "01. Registration On The Platform",
+        stepHead: '01. Registration On The Platform',
         stepBody:
-          "Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.",
-        icon: "fa fa-users"
+          'Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.',
+        icon: 'fa fa-users',
       },
       partB: {
-        stepHead: "02. Passing Verification",
+        stepHead: '02. Passing Verification',
         stepBody:
-          "Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.",
-        icon: "fa fa-check-square-o"
-      }
+          'Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.',
+        icon: 'fa fa-check-square-o',
+      },
     },
     {
       partA: {
-        stepHead: "03. Creating An Application For a Loan",
+        stepHead: '03. Creating An Application For a Loan',
         stepBody:
-          "Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.",
-        icon: "fa fa-pencil-square-o"
+          'Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.',
+        icon: 'fa fa-pencil-square-o',
       },
       partB: {
-        stepHead: "04. Financing a Loan",
+        stepHead: '04. Financing a Loan',
         stepBody:
-          "Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.",
-        icon: "fa fa-university"
-      }
+          'Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.',
+        icon: 'fa fa-university',
+      },
     },
     {
       partA: {
-        stepHead: "05. Activating a Loan",
+        stepHead: '05. Activating a Loan',
         stepBody:
-          "Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.",
-        icon: "fa fa-bell-o"
+          'Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.',
+        icon: 'fa fa-bell-o',
       },
       partB: {
-        stepHead: "06. Receiving Funds",
+        stepHead: '06. Receiving Funds',
         stepBody:
-          "Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.",
-        icon: "fa fa-paw"
-      }
-    }
+          'Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur nulla. Cras sodales eu nibh vel scelerisque.',
+        icon: 'fa fa-paw',
+      },
+    },
   ];
 }

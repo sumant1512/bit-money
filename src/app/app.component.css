@@ -1,17 +1,30 @@
+#particles-js {
+  position: absolute;
+  height: 100vh;
+  max-width: 1800px;
+  background-color: rgb(13, 70, 159);
+  z-index: -1;
+}
+
+.app-container {
+  max-width: 1800px;
+  margin: auto;
+}
+
 /* This is to apply overlay when header is open in I-pad view */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: none;
-    }
-    .open {
-        display: block;
-    }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  .open {
+    display: block;
+  }
 }

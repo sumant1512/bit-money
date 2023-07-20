@@ -1,78 +1,95 @@
 <!-- This is steps template -->
 <div class="bg-light-blue">
-    <div class="container text-center text-md-left">
-        <div class="row m-auto pt-5 pb-4">
-            <!-- This is steps head -->
-            <div class="col-12 col-xs-12 col-sm-12 col-md-8 mt-5">
-                <h2 class="text-light">Few Steps For a Loan </h2>
-            </div>
-            <!-- steps head end -->
+  <div class="text-center text-md-left">
+    <div class="row m-auto pt-5 pb-4">
+      <!-- This is steps head -->
+      <div class="col-12 col-xs-12 col-sm-12 col-md-8 mt-5">
+        <h2 class="text-light">Few Steps For a Loan</h2>
+      </div>
+      <!-- steps head end -->
 
-            <!-- This is for scroll down icon move -->
-            <div class="text-center text-md-right text-fade-blue col-12 col-xs-12 col-sm-12 col-md-2 mt-5">
-                <span>SCROLL DOWN</span>
-            </div>
-            <div class="col-12 col-xs-12 col-sm-12 col-md-1 mt-4 mb-5">
-                <div class="scroll-down text-fade-blue m-auto text-center pt-4 pr-5 pl-4 pb-3">
-                    <a href="">
-                        <i class="bounce-in-down text-fade-blue fa fa-angle-double-down fa-2x"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- Scroll down icon move end -->
+      <!-- This is for scroll down icon move -->
+      <div
+        class="text-center text-md-right text-fade-blue col-12 col-xs-12 col-sm-12 col-md-2 mt-5"
+      >
+        <span>SCROLL DOWN</span>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-12 col-md-1 mt-4 mb-5">
+        <div
+          class="scroll-down text-fade-blue m-auto text-center pt-4 pr-5 pl-4 pb-3"
+        >
+          <a href="">
+            <i
+              class="bounce-in-down text-fade-blue fa fa-angle-double-down fa-2x"
+            ></i>
+          </a>
         </div>
+      </div>
+      <!-- Scroll down icon move end -->
     </div>
+  </div>
 
-    <!-- This is steps loop  -->
-    <div *ngFor="let step of stepsDetails" class="bg-dark-blue text-fade-blue px-5 px-lg-0">
-        <!-- This is right step -->
-        <div class="row m-auto">
-            <div class="col-md-1 col-lg-2">
+  <!-- This is steps loop  -->
+  <div
+    *ngFor="let step of stepsDetails"
+    class="bg-dark-blue text-fade-blue px-5 px-lg-0"
+  >
+    <!-- This is right step -->
+    <div class="row m-auto">
+      <div class="col-md-1 col-lg-2"></div>
+      <div
+        class="box-border-right col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8"
+      >
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-lg-4"></div>
+          <div
+            class="d-flex text-right col-12 col-xs-12 col-sm-12 col-lg-8 py-5"
+          >
+            <div>
+              <h2>{{ step.partA.stepHead }}</h2>
+              <p class="ml-4">{{ step.partA.stepBody }}</p>
             </div>
-            <div class="box-border-right col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8">
-                <div class="row">
-                    <div class="col-12 col-xs-12 col-sm-12 col-lg-4"></div>
-                    <div class="d-flex text-right col-12 col-xs-12 col-sm-12 col-lg-8 py-5">
-                        <div>
-                            <h2>{{step.partA.stepHead}}</h2>
-                            <p class="ml-4">{{step.partA.stepBody}}</p>
-                        </div>
-                        <div class="my-auto px-4">
-                            <i class="bg-common-button br-50 p-3 fa-2x {{step.partA.icon}}"></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="my-auto px-4">
+              <i
+                class="bg-common-button br-50 p-3 fa-2x {{ step.partA.icon }}"
+              ></i>
             </div>
-            <div class="col-md-1 col-lg-2">
-            </div>
+          </div>
         </div>
-        <!-- Right step end -->
-        <!-- Left step end -->
-        <div class="row m-auto">
-            <div class="col-md-1 col-lg-2">
-            </div>
-            <div class="box-border-left box-border-bottom box-border-top br-tl-10 br-bl-10 col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8">
-                <div class="row">
-                    <div class="d-flex text-left col-12 col-xs-12 col-sm-12 col-lg-7 py-5">
-                        <div class="my-auto px-4">
-                            <i class="bg-common-button br-50 p-3 fa-2x {{step.partB.icon}}"></i>
-                        </div>
-                        <div>
-                            <h2>{{step.partB.stepHead}}</h2>
-                            <p>{{step.partB.stepBody}}</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xs-12 col-sm-12 col-lg-5"></div>
-                </div>
-            </div>
-            <div class="col-md-1 col-lg-2">
-            </div>
-        </div>
-        <!-- Left step end -->
+      </div>
+      <div class="col-md-1 col-lg-2"></div>
     </div>
-    <!-- Steps loop end -->
+    <!-- Right step end -->
+    <!-- Left step end -->
+    <div class="row m-auto">
+      <div class="col-md-1 col-lg-2"></div>
+      <div
+        class="box-border-left box-border-bottom box-border-top br-tl-10 br-bl-10 col-12 col-xs-12 col-sm-12 col-md-10 col-lg-8"
+      >
+        <div class="row">
+          <div
+            class="d-flex text-left col-12 col-xs-12 col-sm-12 col-lg-7 py-5"
+          >
+            <div class="my-auto px-4">
+              <i
+                class="bg-common-button br-50 p-3 fa-2x {{ step.partB.icon }}"
+              ></i>
+            </div>
+            <div>
+              <h2>{{ step.partB.stepHead }}</h2>
+              <p>{{ step.partB.stepBody }}</p>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-lg-5"></div>
+        </div>
+      </div>
+      <div class="col-md-1 col-lg-2"></div>
+    </div>
+    <!-- Left step end -->
+  </div>
+  <!-- Steps loop end -->
 
-    <!-- This is svg teplate -->
-    <app-dark-bottom-svg></app-dark-bottom-svg>
-    <!-- Svg template end -->
+  <!-- This is svg teplate -->
+  <app-dark-bottom-svg></app-dark-bottom-svg>
+  <!-- Svg template end -->
 </div>
